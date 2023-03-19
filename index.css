@@ -1,0 +1,29 @@
+*{
+box-sizing: border-box;
+}
+
+div.maskepp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+}
+
+div.maskepp div{
+    border: 3px solid red;
+    flex: 0 0 calc(33% - 5px);
+    padding: 10px;
+
+}
+
+.hatter{
+    background-color: aqua;
+}
+
+
+@media screen and (max-width: 400px) {
+    div.maskepp div{    
+    flex: 0 0 calc(50% - 5px);
+    }
+        
+}
